@@ -13,11 +13,9 @@
 
 Route::get('/', 'mainController@viewHomepage');
 
-<<<<<<< HEAD
 Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
-=======
 /******** ROUTES GERANT LES PAGES DE DESTINATION PAYS/VILLE***********/
 
 Route::get('destination', 'mainController@viewDestination');
@@ -90,4 +88,3 @@ Route::get('{NomVille}/evenements/{nomEvenement}', 'mainController@viewEvenement
 
 
 
->>>>>>> 146d323a958a7e91d58f141629bb3d38cf773c8b
