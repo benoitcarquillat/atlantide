@@ -11,6 +11,26 @@
 |
 */
 
+
+/*
+|--------------------------------------------------------------------------
+| Espace admin 
+|--------------------------------------------------------------------------
+|
+| ici on peut gerer toutes les routes concernant les admins
+| Le middleware isAdmin permet de vérifier si l'utilisateur a bien le droit de
+| se connecter.
+|
+*/
+
+Route::group(['prefix' => 'admin', 'middleware' => 'auth'], function() {
+
+    Route::get('salut', function() {
+        return "salut les admins";
+    });
+});
+
+
 Route::get('/', 'mainController@viewHomepage');
 
 Auth::routes();
