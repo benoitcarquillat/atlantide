@@ -19,14 +19,12 @@ class mainController extends Controller
     }
 
     public function viewLieuxList(){
-        //$listeActivities = Activity::all();
-        //return view('LieuxList',['activities'=>$listeActivities]);
         $listeLieux = Lieux::all();
         return view('LieuxList', ['lieux'=>$listeLieux]);
     }
 
-    public function viewLieuInteret(){
-        $lieu = Lieux::all();
+    public function viewLieuInteret($id){
+        $lieu = Lieux::find($id);
         return view('LieuInteret', ['lieu'=>$lieu]);
     }
 
