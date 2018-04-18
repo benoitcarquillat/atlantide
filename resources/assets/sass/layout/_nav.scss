@@ -1,0 +1,35 @@
+.navbar {
+    background: #fff;
+    border: none;
+    height: 70px;
+    display: flex;
+    align-items: center;
+    margin-bottom: 0;
+}
+
+.navbar-brand {
+    padding: 10px 15px;
+}
+
+.button-search {
+    background: none; border: none;
+
+    input {
+        border: none;
+        text-align: center;
+    }
+}
+.navbar-header, .nav {
+    width: 100%;
+}
+
+.nav {
+    display: flex;
+    justify-content: space-between;
+}
+
+.navbar-brand {
+    img {
+        max-height: 100%;
+    }
+}

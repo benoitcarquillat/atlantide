@@ -10,7 +10,7 @@ class mainController extends Controller
 {
     public function viewHomepage(){
 
-        return view('home');
+        return view('homepage');
     }
 
     public function viewVillesList(){

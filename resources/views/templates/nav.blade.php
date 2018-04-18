@@ -10,56 +10,64 @@
                 <span class="icon-bar"></span>
             </button>
 
-            <!-- Branding Image -->
-            <a class="navbar-brand" href="{{ url('/') }}">
-                {{ config('app.name', 'Laravel') }}
-            </a>
-        </div>
-
-
-        <ul class="nav navbar-nav navbar-right">
-            <li> <a href="/">Accueil</a> </li>
-            <li> <a href="#">Lieu d'interet</a> </li>
-            <li> <a href="#">Evenements</a> </li>
-            @guest
-
-            <li class="dropdown">
-                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">
-                    Mon compte <span class="caret"></span>
+            <ul class="nav navbar-nav">
+                <li> <a href="/">Accueil</a> </li>
+                <li> <a href="#">Lieu d'interet</a> </li>
+                <li> <a href="#">Evenements</a> </li>
+                
+                <!-- Branding Image -->
+                <a class="navbar-brand" href="{{ url('/') }}">
+                    <img src="/img/logo.png">
                 </a>
-                <ul class="dropdown-menu" role="menu">
-                    <li>
-                        <a href="/login">
-                            Connexion
-                        </a>
-                    </li>
-                    <li> <a href="/register">Créer un compte</a> </li>
-                </ul>
-            </li>
-            @endguest
+
+                <button class="button-search">
+                    <input type="text" placeholder="Votre recherche..."> <span class="glyphicon glyphicon-search" aria-hidden="true"></span>
+                </button>
+
+                {{-- Quand l'utilisateur est connecté --}}
+                @auth
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">
+                        {{ Auth::user()->pseudo }} <span class="caret"></span>
+                    </a>
+        
+                    <ul class="dropdown-menu" role="menu">
+                        <li>
+                            <a href="{{ route('logout') }}"
+                                onclick="event.preventDefault();
+                                            document.getElementById('logout-form').submit();">
+                                Logout
+                            </a>
+        
+                            <form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">
+                                {{ csrf_field() }}
+                            </form>
+                        </li>
+                        <li> <a href="#">Mon profil</a> </li>
+                    </ul>
+                </li>
+                @endauth
+
+                {{-- Quand l'utilisateur n'est pas connecté --}}
+                @guest
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">
+                        Mon compte <span class="caret"></span>
+                    </a>
+                    <ul class="dropdown-menu" role="menu">
+                        <li>
+                            <a href="/login">Connexion</a>
+                        </li>
+                        <li> <a href="/register">Créer un compte</a> </li>
+                    </ul>
+                </li>
+                @endguest
+            </ul>
             
-            @auth
-            <li class="dropdown">
-                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">
-                    {{ Auth::user()->pseudo }} <span class="caret"></span>
-                </a>
-    
-                <ul class="dropdown-menu" role="menu">
-                    <li>
-                        <a href="{{ route('logout') }}"
-                            onclick="event.preventDefault();
-                                        document.getElementById('logout-form').submit();">
-                            Logout
-                        </a>
-    
-                        <form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">
-                            {{ csrf_field() }}
-                        </form>
-                    </li>
-                    <li> <a href="#">Mon profil</a> </li>
-                </ul>
-            </li>
-            @endauth
-        </ul>
+
+
+
+
+        </div>
     </div>
 </nav>

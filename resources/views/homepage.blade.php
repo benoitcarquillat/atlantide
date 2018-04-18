@@ -1,7 +1,12 @@
 @extends('templates.app')
 
 @section('content')
-<p> Je suis le contenu {{$avis}}</p>
-@stop
+
+<div class="homepage">
+        <div class="homepage__banner"></div>
+</div>
+
+
+@endsection
 
 
