@@ -16,7 +16,8 @@ class CreateLieuxTable extends Migration
         Schema::create('lieux', function (Blueprint $table) { 
             $table->increments('id');
             $table->string('type');
-            $table->string('nom'); 
+            $table->string('nom', 255); 
+            $table->string('description'); 
             $table->string('img', 255);
             $table->string('adresse');
             $table->string('ville', 255);
