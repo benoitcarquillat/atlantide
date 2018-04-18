@@ -2,7 +2,7 @@
 
 namespace App\Http\Controllers;
 use App\Avis;
-use App\Activity;
+use App\Lieux;
 
 use Illuminate\Http\Request;
 
@@ -13,17 +13,21 @@ class mainController extends Controller
         return view('home');
     }
 
-    public function viewDestination(){
-        return view('Destination');
+    public function viewVillesList(){
+        $villesList = Lieux::all();    
+        return view('villeslist', ['villesList'=>$villesList]);
     }
 
     public function viewLieuxList(){
-        $listeActivities = Activity::all();
-        return view('LieuxList',['activities'=>$listeActivities]);
+        //$listeActivities = Activity::all();
+        //return view('LieuxList',['activities'=>$listeActivities]);
+        $listeLieux = Lieux::all();
+        return view('LieuxList', ['lieux'=>$listeLieux]);
     }
 
-    public function viewLieuInteret($nomPays, $nomLieuInteret){
-        return view('LieuInteret', ['pays'=>$nomPays, 'lieuInteret'=>$nomLieuInteret]);
+    public function viewLieuInteret(){
+        $lieu = Lieux::all();
+        return view('LieuInteret', ['lieu'=>$lieu]);
     }
 
     public function viewMonumentsList(){
@@ -46,11 +50,8 @@ class mainController extends Controller
         return view('EvenementsList');
     }
 
-    public function viewPays($nomPays){
-        return view('singlePays', ['pays'=> $nomPays]);
+    public function viewVille($nomVille){
+        return view('singleVille', ['Ville'=> $nomVille]);
     }
 
-    public function viewVille($nomVille){
-        return view('singleVille', ['ville'=> $nomVille]);
-    }
 }

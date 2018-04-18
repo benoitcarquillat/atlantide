@@ -6,12 +6,15 @@ use Illuminate\Database\Eloquent\Model;
 
 class Lieux extends Model
 {
-    protected $table = 'activity';
+    protected $table = 'lieux';
     protected $fillable = [
         'type',
         'nom',
-        'pays',
+        'description',
+        'img',
         'adresse',
+        'ville',
+        'codeP',
     ];
 
 

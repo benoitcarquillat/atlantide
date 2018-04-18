@@ -1,11 +1,12 @@
 @extends('templates.app')
 
 @section('content')
-    <p>Je suis la page globale des lieux d'intérets
-        Voici la liste des activités 
+    <p>Je suis la page qui recense la liste de tous les lieux de la BDD pour une Ville donnée
     </p>
 
-    @foreach($activities as $a)
-        {{$a->pays}} {{$a->ville}} {{$a->type}} {{$a->nom}}<br/>
+    @foreach($lieux as $l)
+        <a href="{{$l->ville}}/lieux/{{$l->id}}">
+            {{$l->ville}} {{$l->type}} {{$l->nom}}<br/>
+        </a>
     @endforeach
 @endsection
