@@ -1,13 +1,15 @@
 <?php
 
 namespace App\Http\Controllers;
+use App\Avis;
 
 use Illuminate\Http\Request;
 
 class mainController extends Controller
 {
     public function viewHomepage(){
-        return view('homepage');
+        $avis= Avis::all();
+        return view('homepage',['avis'=>$avis]);
     }
 
     public function viewDestination(){
