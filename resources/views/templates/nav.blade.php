@@ -22,8 +22,20 @@
             <li> <a href="#">Lieu d'interet</a> </li>
             <li> <a href="#">Evenements</a> </li>
             @guest
-                <li> <a href="/login">Connexion</a> </li>
-                <li> <a href="/register">Créer un compte</a> </li>
+
+            <li class="dropdown">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">
+                    Mon compte <span class="caret"></span>
+                </a>
+                <ul class="dropdown-menu" role="menu">
+                    <li>
+                        <a href="/login">
+                            Connexion
+                        </a>
+                    </li>
+                    <li> <a href="/register">Créer un compte</a> </li>
+                </ul>
+            </li>
             @endguest
             
             @auth
