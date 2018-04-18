@@ -21,7 +21,7 @@ class mainController extends Controller
     public function viewLieuInteret($nomPays, $nomLieuInteret){
         return view('LieuInteret', ['pays'=>$nomPays, 'lieuInteret'=>$nomLieuInteret]);
     }
-    
+
     public function viewMonumentsList(){
         return view('MonumentsList');
     }
