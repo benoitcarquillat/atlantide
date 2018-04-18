@@ -2,14 +2,15 @@
 
 namespace App\Http\Controllers;
 use App\Avis;
+use App\Activity;
 
 use Illuminate\Http\Request;
 
 class mainController extends Controller
 {
     public function viewHomepage(){
-        $avis= Avis::all();
-        return view('homepage',['avis'=>$avis]);
+
+        return view('home');
     }
 
     public function viewDestination(){
@@ -17,7 +18,8 @@ class mainController extends Controller
     }
 
     public function viewLieuxList(){
-        return view('LieuxList');
+        $listeActivities = Activity::all();
+        return view('LieuxList',['activities'=>$listeActivities]);
     }
 
     public function viewLieuInteret($nomPays, $nomLieuInteret){
