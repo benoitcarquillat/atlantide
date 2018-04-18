@@ -1,13 +1,15 @@
 <?php
 
 namespace App\Http\Controllers;
+use App\Avis;
 
 use Illuminate\Http\Request;
 
 class mainController extends Controller
 {
     public function viewHomepage(){
-        return view('homepage');
+        $avis= Avis::all();
+        return view('homepage',['avis'=>$avis]);
     }
 
     public function viewDestination(){
@@ -21,7 +23,7 @@ class mainController extends Controller
     public function viewLieuInteret($nomPays, $nomLieuInteret){
         return view('LieuInteret', ['pays'=>$nomPays, 'lieuInteret'=>$nomLieuInteret]);
     }
-    
+
     public function viewMonumentsList(){
         return view('MonumentsList');
     }
