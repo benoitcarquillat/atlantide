@@ -17,8 +17,10 @@ class CreateAvisTable extends Migration
             $table->increments('id'); 
             $table->string('avis'); 
             $table->integer('note'); 
-            $table->unsignedInteger('idActivity'); 
-            $table->foreign('idActivity')->references('id')->on('avis'); 
+            $table->unsignedInteger('idLieux')->nullable(); 
+            $table->foreign('idLieux')->references('id')->on('lieux'); 
+            $table->unsignedInteger('idEvenement')->nullable(); 
+            $table->foreign('idEvenement')->references('id')->on('evenement');
             $table->unsignedInteger('idUser'); 
             $table->foreign('idUser')->references('id')->on('users'); 
             $table->timestamps(); 
