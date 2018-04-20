@@ -8425,6 +8425,21 @@ body {
   max-height: 100%;
 }
 
+.main-footer .content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+.main-footer .content .main-footer--left,
+.main-footer .content .main-footer--right {
+  margin: auto;
+}
+
 .homepage {
   background-color: #070712;
   color: white;
