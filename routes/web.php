@@ -47,7 +47,7 @@ Route::get('{nomVille}/lieux', 'mainController@viewLieuxList');
 
 
 //Route::get('{nomVille}/lieux/{nomLieuInteret}', 'mainController@viewLieuInteret');
-Route::get('{nomVille}/lieux/{id}', 'mainController@viewLieuInteret');
+Route::get('/lieux/{nomLieu}', 'mainController@viewLieuInteret');
 
 /******** ROUTES GERANT LES PAGES DE MONUMENTS ***********/
 
