@@ -83,6 +83,7 @@ Route::get('{nomVille}/lieux/culture/{nomLieuCulturel}', 'mainController@viewLie
 /******** ROUTES GERANT LES PAGES DES EVENEMENTS ***********/
 
 Route::get('/evenements', 'ControllerEvenement@viewAll');
+Route::get('/evenment/{id}','ControllerEvenementFilm@view')->where('id','[0-9]+');
 
 
 
