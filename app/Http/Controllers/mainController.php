@@ -44,10 +44,6 @@ class mainController extends Controller
         return view('LieuxCulturelsList');
     }
 
-    public function viewEvenementsList(){
-        return view('EvenementsList');
-    }
-
     public function viewVille($nomVille){
         return view('singleVille', ['Ville'=> $nomVille]);
     }

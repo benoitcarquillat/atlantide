@@ -1,0 +1,9 @@
+.main-footer{
+    .content{
+        display: flex;
+        flex-direction: row;
+        .main-footer--left,.main-footer--right{
+            margin: auto;
+        }
+    }
+}

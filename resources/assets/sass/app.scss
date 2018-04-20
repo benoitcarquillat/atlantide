@@ -10,7 +10,8 @@
 
 // layouts
 @import "layout/nav";
+@import "layout/footer";
 
 // Pages
-.homepage        { @import "pages/homepage"; }
+@import "pages/homepage";
 

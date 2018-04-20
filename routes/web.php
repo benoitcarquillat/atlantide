@@ -82,11 +82,8 @@ Route::get('{nomVille}/lieux/culture/{nomLieuCulturel}', 'mainController@viewLie
 
 /******** ROUTES GERANT LES PAGES DES EVENEMENTS ***********/
 
+Route::get('/evenements', 'ControllerEvenement@viewAll');
 
-Route::get('{NomVille}/evenements', 'mainController@viewEvenementsList');
-
-
-Route::get('{NomVille}/evenements/{nomEvenement}', 'mainController@viewEvenement');
 
 
 
