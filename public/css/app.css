@@ -8367,6 +8367,13 @@ body {
   margin-top: 0;
 }
 
+.h2black {
+  color: #070712;
+  font-family: "Butler", serif;
+  font-size: 40px;
+  margin-top: 0;
+}
+
 .tag {
   color: #b1b1b1;
   text-transform: uppercase;
