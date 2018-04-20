@@ -1,0 +1,22 @@
+@font-face {
+    font-family: Butler;
+    src: url('/fonts/BUTLER_BOLD.OTF');
+}
+
+body {
+    font-family: 'Raleway', sans-serif;
+    background-color: $body-bg;
+}
+
+.h2 {
+    color: white;
+    font-family: $butler;
+    font-size: 40px;
+    margin-top: 0;
+}
+
+.tag {
+    color: $grey-txt;
+    text-transform: uppercase;
+    margin-bottom: 5px;
+}

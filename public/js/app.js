@@ -43270,7 +43270,7 @@ if (false) {
 /* 42 */
 /***/ (function(module, exports) {
 
-// removed by extract-text-webpack-plugin
+throw new Error("Module build failed: ModuleBuildError: Module build failed: \r\n<<<<<<< HEAD\r\n^\r\n      Invalid CSS after \"<\": expected 1 selector or at-rule, was \"<<<<<<< HEAD\"\r\n      in C:\\wamp64\\www\\Laravel\\atlantide\\resources\\assets\\sass\\pages\\_homepage.scss (line 1, column 1)\n    at runLoaders (C:\\wamp64\\www\\Laravel\\atlantide\\node_modules\\webpack\\lib\\NormalModule.js:195:19)\n    at C:\\wamp64\\www\\Laravel\\atlantide\\node_modules\\loader-runner\\lib\\LoaderRunner.js:364:11\n    at C:\\wamp64\\www\\Laravel\\atlantide\\node_modules\\loader-runner\\lib\\LoaderRunner.js:230:18\n    at context.callback (C:\\wamp64\\www\\Laravel\\atlantide\\node_modules\\loader-runner\\lib\\LoaderRunner.js:111:13)\n    at Object.asyncSassJobQueue.push [as callback] (C:\\wamp64\\www\\Laravel\\atlantide\\node_modules\\sass-loader\\lib\\loader.js:55:13)\n    at Object.done [as callback] (C:\\wamp64\\www\\Laravel\\atlantide\\node_modules\\neo-async\\async.js:7974:18)\n    at options.error (C:\\wamp64\\www\\Laravel\\atlantide\\node_modules\\node-sass\\lib\\index.js:294:32)");
 
 /***/ })
 /******/ ]);
