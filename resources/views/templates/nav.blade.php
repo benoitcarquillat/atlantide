@@ -13,7 +13,7 @@
             <ul class="nav navbar-nav">
                 <li> <a href="/">Accueil</a> </li>
                 <li> <a href="#">Lieu d'interet</a> </li>
-                <li> <a href="#">Evenements</a> </li>
+                <li> <a href="/evenements">Evenements</a> </li>
                 
                 <!-- Branding Image -->
                 <a class="navbar-brand" href="{{ url('/') }}">

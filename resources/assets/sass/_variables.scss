@@ -1,6 +1,9 @@
 
 // Body
 $body-bg: #f5f5f5;
+$dark-blue: #070712;
+$grey-txt: #b1b1b1;
+
 
 // Borders
 $laravel-border-color: darken($body-bg, 10%);
@@ -17,6 +20,7 @@ $brand-warning: #cbb956;
 $brand-danger: #bf5329;
 
 // Typography
+$butler: 'Butler', serif;
 $icon-font-path: "~bootstrap-sass/assets/fonts/bootstrap/";
 $font-family-sans-serif: "Raleway", sans-serif;
 $font-size-base: 14px;

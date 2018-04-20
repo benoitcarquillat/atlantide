@@ -10,7 +10,8 @@ class mainController extends Controller
 {
     public function viewHomepage(){
 
-        return view('homepage');
+        $lieux = Lieux::all();
+        return view('homepage', ['lieux'=>$lieux]);
     }
 
     public function viewVillesList(){
