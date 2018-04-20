@@ -5,8 +5,6 @@
 <div class="homepage">
         <div class="homepage__banner"></div>
 </div>
-
-
 @endsection
 
 
