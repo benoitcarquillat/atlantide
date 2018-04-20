@@ -8418,7 +8418,6 @@ body {
   max-height: 100%;
 }
 
-<<<<<<< HEAD
 .main-footer .content {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -8434,15 +8433,12 @@ body {
   margin: auto;
 }
 
-.homepage .homepage__banner {
-=======
 .homepage {
   background-color: #070712;
   color: white;
 }
 
 .homepage__banner {
->>>>>>> master
   width: 100%;
   height: 70vh;
   background-image: url("/img/homepageBanner.jpg");
