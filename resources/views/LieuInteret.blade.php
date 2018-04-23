@@ -8,6 +8,7 @@
         {{$l->nom}}<br/>
         {{$l->description}}<br/>
         {{$l->adresse}}<br/>
+        <img src="/public/img/lieux/{{$l->img}}"/>
     @endforeach
 
 
