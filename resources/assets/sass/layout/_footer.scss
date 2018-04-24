@@ -1,7 +1,15 @@
 .main-footer{
+    background-color:#070712;
+    width:100%;
+    height:60px;
+    display:flex;
+    align-items: center;
+    justify-content: space-evenly;
+    
     .content{
         display: flex;
         flex-direction: row;
+        justify-content:space-evenly;
         .main-footer--left,.main-footer--right{
             margin: auto;
         }

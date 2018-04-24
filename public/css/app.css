@@ -8425,6 +8425,21 @@ body {
   max-height: 100%;
 }
 
+.main-footer {
+  background-color: #070712;
+  width: 100%;
+  height: 60px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+
 .main-footer .content {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -8433,6 +8448,9 @@ body {
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
 }
 
 .main-footer .content .main-footer--left,
@@ -8460,5 +8478,72 @@ body {
   background-repeat: no-repeat;
   -webkit-box-shadow: inset 0px -120px 265px 18px #070712;
   box-shadow: inset 0px -120px 265px 18px #070712;
+}
+
+.lieuinteret .lieu_banner {
+  height: 650px;
+  background-size: cover;
+  background-position: center;
+  font-family: "Butler", serif;
+  color: white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.lieuinteret .lieu_banner h1 {
+  font-size: 72px;
+}
+
+.lieuinteret .container {
+  color: white;
+  font-family: "Raleway", sans-serif;
+  font-weight: bold;
+  padding-bottom: 150px;
+}
+
+.lieuinteret .container .tag {
+  padding-top: 60px;
+}
+
+.lieuinteret .container .h2black {
+  padding-bottom: 80px;
+  font-size: 80px;
+}
+
+.lieuinteret .container .card_left {
+  height: 400px;
+  background-size: cover;
+  background-position: center;
+}
+
+.lieuinteret .container .card_right {
+  background-color: #070712;
+  height: 400px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.lieuinteret .container .card_right .description {
+  padding-right: 80px;
+  padding-left: 40px;
+  padding-top: 30px;
+}
+
+.lieuinteret .container .card_right .adresse {
+  padding-right: 80px;
+  padding-left: 40px;
+  padding-top: 30px;
 }
 
