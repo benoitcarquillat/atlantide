@@ -2,4 +2,12 @@
 
 @section('content')
     Voici ma query
-@stop
+
+    <ul>
+
+        @foreach ($results as $result)
+           <li> {{$result->nom}} </li>
+        @endforeach
+    </ul>
+
+@endsection

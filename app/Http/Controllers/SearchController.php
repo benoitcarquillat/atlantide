@@ -3,14 +3,20 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Input;
 use App\Lieux;
 
 class SearchController extends Controller
 {
-    public function getSearch($request){
-        $query = $request->get('q');
+    public function getSearch(){
 
-        $result = $query ? Lieux::search($query)->orderBy('id', 'desc')->paginate(10) : Lieux::all();
-        return view('search', compact('lieux'));
+         //get keywords input for search
+         $keyword=  Input::get('q');
+
+         //search that location in Database
+          $results= Lieux::where('nom', 'like', '%' . $keyword . '%')->get(); ;
+
+         //return display search result by using a view
+        return view('search', ['results'=>$results]);
     }
 }

@@ -15,7 +15,7 @@
 
 
 //route search 
-Route::get('/search{request}',['uses' => 'SearchController@getSearch','as' => 'search']);
+Route::get('/search',['uses' => 'SearchController@getSearch','as' => 'search']);
 
 /*
 |--------------------------------------------------------------------------

@@ -8400,6 +8400,12 @@ body {
 .button-search {
   background: none;
   border: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .button-search input {
@@ -8458,10 +8464,13 @@ body {
   margin: auto;
 }
 
+.cards .mg15 {
+  margin: 15px 0px;
+}
+
 .cards .card {
   background-color: lightgray;
   color: white;
-  margin: 15px;
 }
 
 .homepage {
