@@ -20,9 +20,9 @@
                     <img src="/img/logo.png">
                 </a>
 
-                <button class="button-search">
-                    <input type="text" placeholder="Votre recherche..."> <span class="glyphicon glyphicon-search" aria-hidden="true"></span>
-                </button>
+                <form class="button-search" method="GET" action="/search=">
+                    <input type="search" placeholder="Votre recherche..." name="q"> <span class="glyphicon glyphicon-search" aria-hidden="true"></span>
+                </form>
 
                 {{-- Quand l'utilisateur est connecté --}}
                 @auth

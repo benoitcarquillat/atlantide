@@ -17,5 +17,8 @@ class Lieux extends Model
         'codeP',
     ];
 
+    public function scopeSearch ($query, $search) {
+        return $query->where('nom', 'LIKE', "%$search%");
+    }
 
 }

@@ -12,6 +12,11 @@
 */
 
 
+
+
+//route search 
+Route::get('/search{request}',['uses' => 'SearchController@getSearch','as' => 'search']);
+
 /*
 |--------------------------------------------------------------------------
 | Espace admin 
