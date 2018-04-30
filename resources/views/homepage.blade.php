@@ -4,7 +4,11 @@
 
 <div class="homepage">
 	{{-- banniere --}}
-	<div class="homepage__banner"></div>
+	<div class="homepage__banner">
+		<img src="{{ asset('img/layer1.png') }}" alt="">
+		<div class="layer">
+		</div>
+	</div>
 
 	<div class="container">
 		<p class="tag">Top destinations</p>
