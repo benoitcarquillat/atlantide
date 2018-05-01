@@ -10,7 +10,7 @@
   
     <div class="container">
         <p class="tag">{{$l->type}}</p>
-        <h2 class="h2black">Il faut trouver du texte</h2>
+        <h2 class="h2black">A tester à {{$l->ville}}</h2>
         <div class ="row card">
             <div class="col-md-5 col-sm-12 card_left" style="background-image:url(/img/lieux/{{$l->img}});"></div>
             <div class="col-md-7 col-sm-12 card_right">
@@ -25,7 +25,11 @@
                     {{$l->ville}}</p>
                 </div>
             </div>
-
+        </div>
+        <div class="container_buttons">
+            <button type="button" class="btn"><a href="/">Accueil</a></button>
+            <button type="button" class="btn"><a href="/villes">Liste des villes</a></button>
+            <button type="button" class="btn"><a href="{{$l->ville}}">Liste des lieux à {{$l->ville}}</a></button>
         </div>
     </div>
     @endforeach

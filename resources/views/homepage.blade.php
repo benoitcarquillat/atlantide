@@ -18,9 +18,11 @@
 
 				@foreach ($lieux as $lieu)
 					<div class="col-6 col-md-3 mg15">
-						<div class="col-md-12 card">
-							<p> {{ $lieu->id }} </p>
-							<p> {{$lieu->nom}} </p>
+						<div class="col-md-12 card" style="background-image:url(/img/lieux/{{$lieu->img}});">
+							<a href="/lieux/{{$lieu->nom}}">
+								<p> {{$lieu->id }} </p>
+								<p> {{$lieu->nom}} </p>
+							</a>
 						</div>
 					</div>
 				@endforeach

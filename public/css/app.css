@@ -8573,3 +8573,26 @@ body {
   padding-top: 30px;
 }
 
+.lieuinteret .container .container_buttons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+
+.lieuinteret .container .container_buttons button {
+  margin-top: 40px;
+  background-color: #070712;
+  width: auto;
+  color: white;
+  font-family: "Raleway", sans-serif;
+  font-weight: bold;
+}
+
+.lieuinteret .container .container_buttons button a {
+  color: white;
+  text-decoration: none;
+}
+

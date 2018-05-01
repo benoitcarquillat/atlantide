@@ -11,8 +11,8 @@
             </button>
 
             <ul class="nav navbar-nav">
-                <li> <a href="/villes">Accueil</a> </li>
-                <li> <a href="#">Lieu d'interet</a> </li>
+                <li> <a href="/">Accueil</a> </li>
+                <li> <a href="#">Lieux d'interet</a> </li>
                 <li> <a href="/evenements">Evenements</a> </li>
                 
                 <!-- Branding Image -->
