@@ -8391,6 +8391,8 @@ body {
       -ms-flex-align: center;
           align-items: center;
   margin-bottom: 0;
+  position: fixed;
+  width: 100%;
 }
 
 .navbar-brand {
@@ -8478,19 +8480,46 @@ body {
   color: white;
 }
 
-.homepage__banner {
-  width: 100%;
-  height: 80vh;
-  background-image: url("/img/homepageBanner.jpg");
-  background-size: cover;
-  background-position-y: bottom;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
+.homepage .parralaxContainer {
+  overflow: hidden;
+  height: 90vh;
   position: relative;
 }
 
-.homepage__banner .layer {
+.homepage .parralaxContainer .img {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  z-index: 2;
+}
+
+.homepage .parralaxContainer .img img {
   position: absolute;
+  bottom: 0;
+  width: 100%;
+}
+
+.homepage .parralaxContainer .birds {
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+
+.homepage .parralaxContainer .txt {
+  width: 100%;
+  text-align: center;
+  position: absolute;
+  top: 30%;
+}
+
+.homepage .parralaxContainer .txt h1 {
+  font-size: 80px;
+  font-family: "Butler", serif;
+}
+
+.homepage .parralaxContainer .boxShadow {
+  position: absolute;
+  z-index: 3;
   bottom: 0;
   width: 100%;
   height: 100%;
@@ -8498,12 +8527,13 @@ body {
   box-shadow: inset 0px -120px 265px 18px #070712;
 }
 
-.homepage__banner img {
-  position: absolute;
-  bottom: 0;
+.homepage__banner {
   width: 100%;
-  -webkit-box-shadow: inset 0px -120px 265px 18px #070712;
-  box-shadow: inset 0px -120px 265px 18px #070712;
+  height: 100%;
+  background-image: url("/img/homepageBanner.jpg");
+  background-size: cover;
+  background-position-y: bottom;
+  background-repeat: no-repeat;
 }
 
 .lieuinteret .lieu_banner {

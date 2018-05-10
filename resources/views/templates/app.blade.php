@@ -21,6 +21,7 @@
     @include('templates/footer')
 
     <!-- Scripts -->
+    <script src="{{ asset('js/library/rellax.min.js') }}"></script>
     <script src="{{ asset('js/app.js') }}"></script>
 
 </body>
