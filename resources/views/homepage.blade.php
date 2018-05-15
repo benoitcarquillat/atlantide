@@ -63,7 +63,7 @@
 									<div class="card_content">
 										<p class="uppercase bold ville"> {{$evenement->ville}} </p>
 										<p class="uppercase bold nom"> {{$evenement->nom}} </p>
-										<p> {{$evenement->description}} </p>
+										<p> {{ str_limit($evenement->description,30) }} </p>
 									</div>
 								</a>
 							</div>
