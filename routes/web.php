@@ -48,7 +48,7 @@ Route::get('villes', 'mainController@viewVillesList');
 
 Route::get('{nomVille}/lieux', 'mainController@viewLieuxList');
 
-/******** ROUTES GERANT LES PAGES DE LIEUX D INTERET ***********/
+ /******** ROUTES GERANT LES PAGES DE LIEUX D INTERET ***********/
 
 
 //Route::get('{nomVille}/lieux/{nomLieuInteret}', 'mainController@viewLieuInteret');
