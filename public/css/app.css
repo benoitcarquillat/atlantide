@@ -8358,6 +8358,7 @@ button.close {
 body {
   font-family: 'Raleway', sans-serif;
   background-color: #f5f5f5;
+  margin-top: 70px;
 }
 
 .h2 {
@@ -8393,6 +8394,7 @@ body {
   margin-bottom: 0;
   position: fixed;
   width: 100%;
+  top: 0;
 }
 
 .navbar-brand {
