@@ -27,27 +27,53 @@
 	</header>
 
 	<div class="container">
-		<p class="tag">Top destinations</p>
-		<h2 class="h2">Découvrez nos destinations coup de coeur</h2>
-		<div class="cards">
-			<div class="row">
+		<div class="section_four_items">
+			<p class="tag">Top destinations</p>
+			<h2 class="h2">Découvrez nos dernieres destinations</h2>
+			<div class="cards">
+				<div class="row">
 
-				@foreach ($lieux as $lieu)
-					<div class="col-6 col-md-3 mg15">
-						<div class="col-md-12 card" style="background-image:url(/img/lieux/{{$lieu->img}});">
-							<a href="/lieux/{{$lieu->nom}}">
-								<div class="card_content">
-									<p class="uppercase bold ville"> {{$lieu->ville}} </p>
-									<p class="uppercase bold nom"> {{$lieu->nom}} </p>
-									<p> {{$lieu->description}} </p>
-								</div>
-							</a>
+					@foreach ($lieux as $lieu)
+						<div class="col-6 col-md-3 mg15">
+							<div class="col-md-12 card" style="background-image:url(/img/lieux/{{$lieu->img}});">
+								<a href="/lieux/{{$lieu->nom}}">
+									<div class="card_content">
+										<p class="uppercase bold ville"> {{$lieu->ville}} </p>
+										<p class="uppercase bold nom"> {{$lieu->nom}} </p>
+										<p> {{ str_limit($lieu->description, 30) }} </p>
+									</div>
+								</a>
+							</div>
 						</div>
-					</div>
-				@endforeach
-				
+					@endforeach
+					
+				</div>
 			</div>
 		</div>
+
+		<div class="section_four_items">
+			<p class="tag">Top évenenements</p>
+			<h2 class="h2">Découvrez nos derniers évenements</h2>
+			<div class="cards">
+				<div class="row">
+					@foreach ($evenements as $evenement)
+						<div class="col-6 col-md-3 mg15">
+							<div class="col-md-12 card" style="background-image:url(/img/lieux/{{$evenement->img}});">
+								<a href="/lieux/{{$evenement->nom}}">
+									<div class="card_content">
+										<p class="uppercase bold ville"> {{$evenement->ville}} </p>
+										<p class="uppercase bold nom"> {{$evenement->nom}} </p>
+										<p> {{$evenement->description}} </p>
+									</div>
+								</a>
+							</div>
+						</div>
+					@endforeach
+					
+				</div>
+			</div>
+		</div>
+
 	</div>
 </div>
 @endsection
