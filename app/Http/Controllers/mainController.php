@@ -11,8 +11,13 @@ class mainController extends Controller
 {
     public function viewHomepage(){
 
-        $lieux = Lieux::all();
-        return view('homepage', ['lieux'=>$lieux]);
+        $lieux = DB::table('lieux')->take(4)->get();
+        $evenements = DB::table('evenement')->take(4)->get();
+
+        return view('homepage', [
+            'lieux'=>$lieux,
+            'evenements'=>$evenements,
+        ]);
     }
 
     public function viewVillesList(){
