@@ -23,7 +23,9 @@
         <h2> Les évenements :</h2>
         <ul>
             @foreach ($results_event as $result_event)
-                <li> {{$result_event->nom}} </li>
+                <a href="/evenement/{{$result_event->nom}}">
+                    <li> {{$result_event->nom}} </li>
+                </a>
             @endforeach
         </ul>
     @endif
