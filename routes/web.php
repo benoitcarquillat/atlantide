@@ -47,6 +47,7 @@ Route::get('/home', 'HomeController@index')->name('home');
 Route::get('villes', 'mainController@viewVillesList');
 
 Route::get('{nomVille}/lieux', 'mainController@viewLieuxList');
+Route::get('{nomVille}/evenements', 'mainController@viewEvenementsList');
 
  /******** ROUTES GERANT LES PAGES DE LIEUX D INTERET ***********/
 
@@ -58,8 +59,9 @@ Route::get('/lieux', 'mainController@viewLieuListGlobal');
 
 
 /******** ROUTES GERANT LES PAGES DES EVENEMENTS ***********/
-Route::get('{nomVille}/evenements', 'mainController@viewEvenementsList');
+//
 Route::get('/evenements', 'mainController@viewEvenementsListGlobal');
+Route::get('/evenements/{nomEvenement}', 'mainController@viewEvenement');
 //Route::get('/evenement/{nom}','ControllerEvenementFilm@view');//->where('id','[0-9]+');
 
 

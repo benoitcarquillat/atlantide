@@ -28,7 +28,6 @@ class mainController extends Controller
         $villesList2 = DB::table('evenement')->distinct()->get(['ville']);
         $totalVillesList = $villesList->concat($villesList2);
         return view('villesList', ['villesList'=>$totalVillesList]);
-        dd($totalVillesList);
 
     }
 
@@ -37,6 +36,13 @@ class mainController extends Controller
         $listeLieux = DB::table('lieux')->where('ville', $nomVille )->get();
         //$listeLieux = Lieux::all();
         return view('LieuxList', ['listeLieux'=>$listeLieux]);
+    }
+
+    public function viewEvenementsList($nomVille){
+        //$listeLieux = Lieux::select('select * from lieux where ville = "Mulhouse" ');
+        $evenementsList = DB::table('evenement')->where('ville', $nomVille )->get();
+        //$listeLieux = Lieux::all();
+        return view('evenementsList', ['evenementsList'=>$evenementsList]);
     }
 
     public function viewLieuInteret($nomLieu){
@@ -60,10 +66,6 @@ class mainController extends Controller
     }
 
 
-
-    public function viewEvenementsList(){
-        return view('EvenementsList');
-    }
 
 
 }
