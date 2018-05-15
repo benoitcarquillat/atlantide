@@ -2,7 +2,7 @@
 
 @section('content')
 <div class="lieuinteret">
-    @foreach($lieu as $l)
+    @foreach($evenement as $l)
     <div class="lieu_banner" style="background-image:url(/img/lieux/{{$l->img}});">
         <h1>{{$l->nom}}</h1>       
     </div>
@@ -17,6 +17,8 @@
                 <div class="description">
                     <h3>{{$l->nom}}</h3>
                     <p>{{$l->description}}</p>
+                    <p>Début: {{$l->dateDebut}}</p>
+                    <p>Fin: {{$l->dateFin}}</p>
                 </div>
                 <div class="adresse">
                     <h3>Adresse</h3>
@@ -29,7 +31,7 @@
         <div class="container_buttons">
             <button type="button" class="btn"><a href="/">Accueil</a></button>
             <button type="button" class="btn"><a href="/villes">Liste des villes</a></button>
-            <button type="button" class="btn"><a href="/{{$l->ville}}/lieux">Liste des lieux à {{$l->ville}}</a></button>
+            <button type="button" class="btn"><a href="/{{$l->ville}}/evenements">Liste des évenements à {{$l->ville}}</a></button>
         </div>
     </div>
     @endforeach
