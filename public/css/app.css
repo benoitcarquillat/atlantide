@@ -8480,6 +8480,7 @@ body {
 .homepage {
   background-color: #070712;
   color: white;
+  margin-top: -70px;
 }
 
 .homepage .parralaxContainer {
