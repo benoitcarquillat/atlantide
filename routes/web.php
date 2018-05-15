@@ -53,42 +53,14 @@ Route::get('{nomVille}/lieux', 'mainController@viewLieuxList');
 
 //Route::get('{nomVille}/lieux/{nomLieuInteret}', 'mainController@viewLieuInteret');
 Route::get('/lieux/{nomLieu}', 'mainController@viewLieuInteret');
-
-/******** ROUTES GERANT LES PAGES DE MONUMENTS ***********/
-
-
-Route::get('{nomVille}/lieux/monuments', 'mainController@viewMonumentsList');
+Route::get('/lieux', 'mainController@viewLieuListGlobal');
 
 
-Route::get('{nomVille}/lieux/monuments/{nomMonument}', 'mainController@viewMonument');
-
-/******** ROUTES GERANT LES PAGES DE RESTAURANTS ***********/
-
-Route::get('{nomVille}/lieux/restaurants', 'mainController@viewRestaurantsList');
-
-
-Route::get('{nomVille}/lieux/restaurants/{nomRestaurant}', 'mainController@viewRestaurants');
-
-/******** ROUTES GERANT LES PAGES DE BOUTIQUES ***********/
-
-
-Route::get('{nomVille}/lieux/boutiques', 'mainController@viewBoutiquesList');
-
-
-Route::get('{nomVille}/lieux/boutiques/{nomBoutique}', 'mainController@viewBoutiques');
-
-/******** ROUTES GERANT LES PAGES DE LIEUX DE CULTURE ***********/
-
-
-Route::get('{nomVille}/lieux/culture', 'mainController@viewLieuxCulturelsList');
-
-
-Route::get('{nomVille}/lieux/culture/{nomLieuCulturel}', 'mainController@viewLieuxCulturel');
 
 /******** ROUTES GERANT LES PAGES DES EVENEMENTS ***********/
-
-Route::get('/evenements', 'ControllerEvenement@viewAll');
-Route::get('/evenment/{id}','ControllerEvenementFilm@view')->where('id','[0-9]+');
+Route::get('{nomVille}/evenements', 'mainController@viewEvenementsList');
+Route::get('/evenements', 'mainController@viewEvenementsListGlobal');
+//Route::get('/evenement/{nom}','ControllerEvenementFilm@view');//->where('id','[0-9]+');
 
 
 

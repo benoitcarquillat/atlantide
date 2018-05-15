@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 use App\Avis;
 use App\Lieux;
+use App\Evenement;
 use Illuminate\Support\Facades\DB;
 use Illuminate\Http\Request;
 
@@ -15,10 +16,15 @@ class mainController extends Controller
     }
 
     public function viewVillesList(){
-        //$villesList = Lieux::all();
-        $villesList = DB::table('lieux')->distinct()->get(['ville']); 
-        return view('villeslist', ['villesList'=>$villesList]);
-        
+        $villesList = Lieux::all();
+        $villesList = DB::table('lieux')->distinct()->get(['ville']);
+        //$villesList2 = DB::table('evenement')->distinct()->get(['ville']); 
+        //dd($villesList);
+        $villesList2 = DB::table('evenement')->distinct()->get(['ville']);
+        $totalVillesList = $villesList->concat($villesList2);
+        return view('villesList', ['villesList'=>$totalVillesList]);
+        dd($totalVillesList);
+
     }
 
     public function viewLieuxList($nomVille){
@@ -33,21 +39,22 @@ class mainController extends Controller
         return view('LieuInteret', ['lieu'=>$lieu]);
     }
 
-    public function viewMonumentsList(){
-        return view('MonumentsList');
+    public function viewEvenement($nomEvenement){
+        $evenement = DB::table('evenement')->where('nom', $nomEvenement )->get();
+        return view('evenement', ['evenement'=>$evenement]);
     }
 
-    public function viewRestaurantsList(){
-        return view('RestaurantsList');
+    public function viewLieuListGlobal(){
+        $lieuxListGlobal = Lieux::all();
+        return view('LieuxListGlobal', ['lieuxListGlobal'=>$lieuxListGlobal]);
     }
 
-    public function viewBoutiquesList(){
-        return view('BoutiquesList');
+    public function viewEvenementsListGlobal(){
+        $evenementsListGlobal = evenement::all();
+        return view('evenementsListGlobal', ['evenementsListGlobal'=>$evenementsListGlobal]);
     }
 
-    public function viewLieuxCulturelsList(){
-        return view('LieuxCulturelsList');
-    }
+
 
     public function viewEvenementsList(){
         return view('EvenementsList');
