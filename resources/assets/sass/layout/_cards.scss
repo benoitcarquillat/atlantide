@@ -4,7 +4,22 @@
         margin: 15px 0px;
     }
     .card {
-        background-color: lightgray;
         color: white;
+        border-radius: 15px;
+        background-size: cover;
+        box-shadow: inset 0px 0px 0px 2000px rgba(7,7,18,0.4);
+
+        .card_content {
+            padding: 40px 10px;
+            color: white;
+
+            .ville {
+                font-size: 25px;
+            }
+            .nom {
+                margin: 0;
+            }
+        }
     }
 }
+

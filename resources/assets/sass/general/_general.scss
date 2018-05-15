@@ -9,6 +9,10 @@ body {
     margin-top: $height-nav;
 }
 
+#app {
+    min-height: 100vh;
+}
+
 .h2 {
     color: white;
     font-family: $butler;
@@ -21,6 +25,18 @@ body {
     font-family: $butler;
     font-size: 40px;
     margin-top: 0;
+}
+
+.bold {
+    font-weight: bold;
+}
+
+.uppercase {
+    text-transform: uppercase;
+}
+
+.white {
+    color: white;
 }
 
 .tag {

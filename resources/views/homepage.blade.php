@@ -36,9 +36,11 @@
 					<div class="col-6 col-md-3 mg15">
 						<div class="col-md-12 card" style="background-image:url(/img/lieux/{{$lieu->img}});">
 							<a href="/lieux/{{$lieu->nom}}">
-								<p> {{$lieu->id }} </p>
-								<p> {{$lieu->nom}} </p>
-								<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam, itaque! Lorem ipsum dolor sit amet.</p>
+								<div class="card_content">
+									<p class="uppercase bold ville"> {{$lieu->ville}} </p>
+									<p class="uppercase bold nom"> {{$lieu->nom}} </p>
+									<p> {{$lieu->description}} </p>
+								</div>
 							</a>
 						</div>
 					</div>
