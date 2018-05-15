@@ -8361,6 +8361,10 @@ body {
   margin-top: 70px;
 }
 
+#app {
+  min-height: 100vh;
+}
+
 .h2 {
   color: white;
   font-family: "Butler", serif;
@@ -8373,6 +8377,18 @@ body {
   font-family: "Butler", serif;
   font-size: 40px;
   margin-top: 0;
+}
+
+.bold {
+  font-weight: bold;
+}
+
+.uppercase {
+  text-transform: uppercase;
+}
+
+.white {
+  color: white;
 }
 
 .tag {
@@ -8473,8 +8489,24 @@ body {
 }
 
 .cards .card {
-  background-color: lightgray;
   color: white;
+  border-radius: 15px;
+  background-size: cover;
+  -webkit-box-shadow: inset 0px 0px 0px 2000px rgba(7, 7, 18, 0.4);
+          box-shadow: inset 0px 0px 0px 2000px rgba(7, 7, 18, 0.4);
+}
+
+.cards .card .card_content {
+  padding: 40px 10px;
+  color: white;
+}
+
+.cards .card .card_content .ville {
+  font-size: 25px;
+}
+
+.cards .card .card_content .nom {
+  margin: 0;
 }
 
 .homepage {
