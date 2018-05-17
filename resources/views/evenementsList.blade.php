@@ -5,6 +5,8 @@
     </p>
 
     @foreach($evenementsList as $ll)
+
+    <h2>A {{$ll->ville}}, il y a...</h2>
         <a href="/evenements/{{$ll->nom}}">
             {{$ll->nom}}<br/>
         </a>

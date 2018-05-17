@@ -746,7 +746,7 @@ module.exports = Cancel;
 /***/ (function(module, exports, __webpack_require__) {
 
 __webpack_require__(8);
-module.exports = __webpack_require__(36);
+module.exports = __webpack_require__(37);
 
 
 /***/ }),
@@ -763,6 +763,8 @@ module.exports = __webpack_require__(36);
 __webpack_require__(9);
 
 __webpack_require__(35);
+
+__webpack_require__(36);
 
 // window.Vue = require('vue');
 
@@ -31823,6 +31825,12 @@ var rellax = new Rellax('.rellax');
 
 /***/ }),
 /* 36 */
+/***/ (function(module, exports) {
+
+
+
+/***/ }),
+/* 37 */
 /***/ (function(module, exports) {
 
 // removed by extract-text-webpack-plugin

@@ -9,6 +9,8 @@ require('./bootstrap');
 
 require('./parallax');
 
+require('./nav');
+
 // window.Vue = require('vue');
 
 // /**
