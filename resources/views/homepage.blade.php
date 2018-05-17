@@ -40,7 +40,7 @@
 									<div class="card_content">
 										<p class="uppercase bold ville"> {{$lieu->ville}} </p>
 										<p class="uppercase bold nom"> {{$lieu->nom}} </p>
-										<p> {{ str_limit($lieu->description, 30) }} </p>
+										<p> {{ str_limit($lieu->description, 25) }} </p>
 									</div>
 								</a>
 							</div>
@@ -63,7 +63,7 @@
 									<div class="card_content">
 										<p class="uppercase bold ville"> {{$evenement->ville}} </p>
 										<p class="uppercase bold nom"> {{$evenement->nom}} </p>
-										<p> {{ str_limit($evenement->description,30) }} </p>
+										<p> {{ str_limit($evenement->description,25) }} </p>
 									</div>
 								</a>
 							</div>
@@ -74,6 +74,10 @@
 			</div>
 		</div>
 
+		<div class="txt_wrapper">
+			<h2 class="h2">Explore the world</h2>
+			<p>Lorem ipsum Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur provident minus est molestias mollitia ipsum in quis eum voluptates reiciendis! dolor, sit amet consectetur Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque voluptatibus sit accusamus maxime dolor, eaque iste! Dignissimos commodi consectetur distinctio! adipisicing elit. Placeat beatae aliquam facilis numquam quisquam ut consequatur distinctio culpa! Dolor, quo?</p>
+		</div>
 	</div>
 </div>
 @endsection

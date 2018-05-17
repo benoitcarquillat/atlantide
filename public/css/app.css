@@ -8497,6 +8497,7 @@ body {
 }
 
 .main-footer .content {
+  width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -8547,6 +8548,19 @@ body {
 
 .homepage .section_four_items {
   margin-bottom: 100px;
+}
+
+.homepage .txt_wrapper {
+  text-align: center;
+  margin-bottom: 150px;
+}
+
+.homepage .txt_wrapper .h2 {
+  margin-bottom: 50px;
+}
+
+.homepage .txt_wrapper p {
+  color: #b1b1b1;
 }
 
 .homepage .parralaxContainer {
