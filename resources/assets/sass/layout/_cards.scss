@@ -1,23 +1,43 @@
 .cards {
 
+
     .mg15 {
         margin: 15px 0px;
     }
-    .card {
-        color: white;
-        border-radius: 15px;
-        background-size: cover;
-        box-shadow: inset 0px 0px 0px 2000px rgba(7,7,18,0.4);
 
-        .card_content {
-            padding: 40px 10px;
+    .cardWrapper {
+        overflow: hidden;
+        border-radius: $border-radius;
+        .card {
             color: white;
-
-            .ville {
-                font-size: 25px;
+            background-size: cover;
+            transition: all 300ms ease-in-out;
+            box-shadow: inset 0px 0px 0px 2000px rgba(7,7,18,0.4);
+    
+            .card_content {
+                padding: 40px 10px;
+                color: white;
+    
+                .ville {
+                    font-size: 25px;
+                }
+                .nom {
+                    margin: 0;
+                }
+    
+                .description {
+                    opacity: 0;
+                    transform: translateY(20px);
+                    transition: all 300ms ease-in-out;
+                }
             }
-            .nom {
-                margin: 0;
+    
+            &:hover .description{
+                opacity: 1;
+                transform: translateY(0px);
+            }
+            &:hover {
+                transform: scale(1.04);
             }
         }
     }
