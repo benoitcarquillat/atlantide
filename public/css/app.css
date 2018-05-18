@@ -8479,6 +8479,15 @@ body {
 
   .navbar .container .navbar-header .navbar-toggle {
     float: left;
+    background-color: white;
+  }
+
+  .navbar .container .navbar-header .boutonactif {
+    background-color: #ddd !important;
+  }
+
+  .navbar .container .navbar-header .boutoninactif {
+    background-color: #ddd !important;
   }
 
   .navbar .container .nav {
