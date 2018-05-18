@@ -17,7 +17,7 @@
 				<img src="{{ asset('img/birds.png') }}" alt="">
 			</div>
 	
-			<div class="rellax layer txt" data-rellax-speed="-2"> 
+			<div class="rellax layer txt" data-rellax-speed="2"> 
 				<h1>Atlantide</h1>
 				<p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
 			</div>
@@ -59,7 +59,7 @@
 					@foreach ($evenements as $evenement)
 						<div class="col-6 col-md-3 mg15">
 							<div class="col-md-12 card" style="background-image:url(/img/lieux/{{$evenement->img}});">
-								<a href="/lieux/{{$evenement->nom}}">
+								<a href="/evenements/{{$evenement->nom}}">
 									<div class="card_content">
 										<p class="uppercase bold ville"> {{$evenement->ville}} </p>
 										<p class="uppercase bold nom"> {{$evenement->nom}} </p>

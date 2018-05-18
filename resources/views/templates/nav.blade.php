@@ -3,11 +3,11 @@
         <div class="navbar-header">
 
             <!-- Collapsed Hamburger -->
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#app-navbar-collapse" aria-controls="app-navbar-collapse" aria-expanded="false" aria-label="Toggle navigation">
-                <!--span class="sr-only">Toggle Navigation</span-->
-                <!--span class="icon-bar navbar-toggler-icon"></span-->
+            {{-- <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#app-navbar-collapse" aria-controls="app-navbar-collapse" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="sr-only">Toggle Navigation</span>
+                <span class="icon-bar navbar-toggler-icon"></span>
                 <span class="navbar-toggler-icon"></span>
-            </button>
+            </button> --}}
 
             <!--MENU NAV LARGE -->
             <div class="collapse navbar-collapse" id="app-navbar-collapse">
