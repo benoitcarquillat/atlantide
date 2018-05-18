@@ -31828,6 +31828,12 @@ var rellax = new Rellax('.rellax');
 /***/ (function(module, exports) {
 
 
+console.log('je suis le js');
+$('.bouton').click(toggleNav);
+
+function toggleNav() {
+    $('.menu2').toggleClass("hidden");
+};
 
 /***/ }),
 /* 37 */
