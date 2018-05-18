@@ -4,11 +4,14 @@
     <p>Je suis la page qui recense la liste de tous les evenements de la BDD pour une Ville donnée
     </p>
 
-    @foreach($evenementsList as $ll)
+    @if ($evenementsList->count() !== 0)
+        @foreach($evenementsList as $ll)
+            <a href="/evenements/{{$ll->nom}}">
+                {{$ll->nom}}<br/>
+            </a>   
+        @endforeach
 
-    <h2>A {{$ll->ville}}, il y a...</h2>
-        <a href="/evenements/{{$ll->nom}}">
-            {{$ll->nom}}<br/>
-        </a>
-    @endforeach
+    @else
+        <h2>Il n'y a pas d'evenements dans cette ville :'(</h2>
+    @endif
 @endsection

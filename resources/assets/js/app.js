@@ -6,10 +6,10 @@
  */
 
 require('./bootstrap');
-
+require('./nav');
 require('./parallax');
 
-require('./nav');
+
 
 // window.Vue = require('vue');
 

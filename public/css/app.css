@@ -8743,7 +8743,126 @@ body {
   }
 }
 
-.lieuxlistglobal p {
-  font-size: 50px;
+.lieuxlistglobal .container_titre {
+  color: #070712;
+  text-align: center;
+  height: 20%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  font-family: "Butler", serif;
+  z-index: 200;
+}
+
+.lieuxlistglobal .liste_liens {
+  background-color: #070712;
+  color: white;
+  min-height: 100vh;
+  height: auto;
+  font-family: "Raleway", sans-serif;
+  font-size: 25px;
+  padding-left: 40px;
+  padding-top: 40px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.lieuxlistglobal .liste_liens a {
+  color: white;
+  font-family: "Raleway", sans-serif;
+  padding-top: 10px;
+}
+
+.lieuxlistglobal .liste_liens a:hover {
+  color: lightgray;
+  text-decoration: none;
+}
+
+.listvilles .container_titre {
+  color: #070712;
+  text-align: center;
+  height: 20%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  font-family: "Butler", serif;
+  z-index: 200;
+}
+
+.listvilles .container {
+  margin: 0 !important;
+  padding: 0 !important;
+  width: 100vw;
+}
+
+.listvilles .liste_liens {
+  margin: 0px;
+  background-color: #070712;
+  color: white;
+  min-height: 100vh;
+  height: auto;
+  font-family: "Raleway", sans-serif;
+  font-size: 25px;
+  padding-left: 40px;
+  padding-top: 40px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.listvilles .liste_liens .row .liste_left,
+.listvilles .liste_liens .row .list_right {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.listvilles .liste_liens .row .liste_left h3,
+.listvilles .liste_liens .row .list_right h3 {
+  text-transform: uppercase;
+  font-weight: bold;
+  border: solid white 1px;
+  padding: 10px;
+}
+
+.listvilles .liste_liens .row .liste_left a,
+.listvilles .liste_liens .row .list_right a {
+  color: white;
+  font-family: "Raleway", sans-serif;
+  padding-top: 10px;
+}
+
+.listvilles .liste_liens .row .liste_left a:hover,
+.listvilles .liste_liens .row .list_right a:hover {
+  color: lightgray;
+  text-decoration: none;
 }
 
