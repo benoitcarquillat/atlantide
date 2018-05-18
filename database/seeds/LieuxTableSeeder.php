@@ -1,9 +1,8 @@
 <?php
 
 use Illuminate\Database\Seeder;
-use Carbon\Carbon;
 
-class EvenementTableSeeder extends Seeder
+class LieuxTableSeeder extends Seeder
 {
     /**
      * Run the database seeds.
@@ -13,16 +12,16 @@ class EvenementTableSeeder extends Seeder
     public function run()
     {
         for ($i = 1; $i < 10; $i++) {
-            \Illuminate\Support\Facades\DB::table('evenement')->insert([
+            \Illuminate\Support\Facades\DB::table('lieux')->insert([
                 'type' => "type $i",
-                'nom' => "Evenement $i",
+                'nom' => "lieux $i",
                 'description' => "lorem ipsum",
                 'img' => "img$i.jpg",
-                'dateDebut' => Carbon::parse('2000-01-01'),
-                'dateFin' => Carbon::parse('2000-01-01'),
                 'adresse' => "adresse $i",
-                'ville' => "event ville $i",
+                'ville' => "lieux ville $i",
                 'codeP' => 60400,
+                // 'created_at' => Carbon::parse('2000-01-01'),
+                // 'updated_at' => Carbon::parse('2000-01-01'),
             ]);
         }
     }

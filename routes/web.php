@@ -28,7 +28,7 @@ Route::get('/search',['uses' => 'SearchController@getSearch','as' => 'search']);
 |
 */
 
-Route::group(['prefix' => 'admin', 'middleware' => 'auth'], function() {
+Route::group(['prefix' => 'admin', 'middleware' => 'checkAdmin'], function() {
 
     Route::get('salut', function() {
         return "salut les admins";

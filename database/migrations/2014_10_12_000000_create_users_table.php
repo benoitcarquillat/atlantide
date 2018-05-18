@@ -18,7 +18,7 @@ class CreateUsersTable extends Migration
             $table->string('nom', 255);
             $table->string('prenom', 255);
             $table->string('pseudo')->unique();
-            $table->string('img', 255);
+            $table->string('img', 255)->nullable();
             $table->string('email')->unique();
             $table->string('password');
             $table->boolean('admin')->default(false);
