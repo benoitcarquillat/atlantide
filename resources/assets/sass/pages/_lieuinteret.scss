@@ -22,7 +22,7 @@
         }
         .h2black{
             padding-bottom:80px;
-            font-size:80px;
+            font-size:60px;
         }
         .card_left{
             height:400px;
@@ -32,7 +32,7 @@
 
         .card_right{
             background-color:#070712;
-            height:400px;
+            min-height:400px;
             display:flex;
             flex-direction: column;
             
@@ -48,20 +48,30 @@
             }
         }
         .container_buttons{
-            display:flex;
-            justify-content: space-evenly;
-            button{
-                margin-top:40px;
-                background-color:#070712;
-                width:auto;
-                color:white;
-                font-family: $font-family-sans-serif;
-                font-weight:bold;
-                a{
-                    color:white;
-                    text-decoration:none;
+            text-align:center;
+            .wrap_bouton{
+                    //display:flex;
+                    button{
+                        margin-top:40px;
+                        background-color:#070712;
+                        min-width: 150px;
+                        width:auto;
+                        color:white;
+                        font-family: $font-family-sans-serif;
+                        font-weight:bold;
+                        a{
+                            color:white;
+                            text-decoration:none;
+                        }
+                    }
                 }
-            }
         }
+    }
+}
+
+@media (min-width:1200px){
+    .wrap_bouton{
+        display:flex;
+        background-color: red;
     }
 }

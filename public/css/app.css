@@ -8682,7 +8682,7 @@ body {
 
 .lieuinteret .container .h2black {
   padding-bottom: 80px;
-  font-size: 80px;
+  font-size: 60px;
 }
 
 .lieuinteret .container .card_left {
@@ -8693,7 +8693,7 @@ body {
 
 .lieuinteret .container .card_right {
   background-color: #070712;
-  height: 400px;
+  min-height: 400px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -8716,25 +8716,34 @@ body {
 }
 
 .lieuinteret .container .container_buttons {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: space-evenly;
-      -ms-flex-pack: space-evenly;
-          justify-content: space-evenly;
+  text-align: center;
 }
 
-.lieuinteret .container .container_buttons button {
+.lieuinteret .container .container_buttons .wrap_bouton button {
   margin-top: 40px;
   background-color: #070712;
+  min-width: 150px;
   width: auto;
   color: white;
   font-family: "Raleway", sans-serif;
   font-weight: bold;
 }
 
-.lieuinteret .container .container_buttons button a {
+.lieuinteret .container .container_buttons .wrap_bouton button a {
   color: white;
   text-decoration: none;
+}
+
+@media (min-width: 1200px) {
+  .lieuinteret .wrap_bouton {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    background-color: red;
+  }
+}
+
+.lieuxlistglobal p {
+  font-size: 50px;
 }
 
