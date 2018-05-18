@@ -27,9 +27,10 @@
             </div>
         </div>
         <div class="container_buttons">
-            <button type="button" class="btn"><a href="/">Accueil</a></button>
-            <button type="button" class="btn"><a href="/villes">Liste des villes</a></button>
-            <button type="button" class="btn"><a href="/{{$l->ville}}/lieux">Liste des lieux à {{$l->ville}}</a></button>
+            
+                <div class="wrap_bouton col-lg-4 col-12"><button type="button" class="btn"><a href="/">Accueil</a></button></div>
+                    <div class="wrap_bouton col-lg-4 col-12"><button type="button" class="btn"><a href="/villes">Liste des villes</a></button></div>
+                        <div class="wrap_bouton col-lg-4 col-12"><button type="button" class="btn"><a href="/{{$l->ville}}/lieux">Liste des lieux à {{$l->ville}}</a></button></div>
         </div>
     </div>
     @endforeach

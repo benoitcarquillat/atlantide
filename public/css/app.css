@@ -8421,6 +8421,11 @@ body {
   display: none !important;
 }
 
+.navbar .transition {
+  -webkit-transition: all fade-in 2s;
+  transition: all fade-in 2s;
+}
+
 .navbar-brand {
   padding: 10px 15px;
 }
@@ -8459,31 +8464,55 @@ body {
   max-height: 100%;
 }
 
-/*.navbar, .navbar-inverse {
-	border-radius: 0;
-	border: none;
-	margin-bottom: 0;
-	min-height: 80px;
-}
+@media (max-width: 768px) {
+  .navbar {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    height: auto;
+  }
 
-.nav li {
-	display: inline;
-	color: white;
-}
+  .navbar .container {
+    margin-left: 60px;
+    width: 100%;
+  }
 
-.navbar-inverse .navbar-nav > li > a {
-	color: #ffffff;
-	font-family: Lato;
-	font-size: 1.7em;
-	font-weight: 300;
-	padding: 30px 25px 33px 25px;
-}
+  .navbar .container .navbar-header .navbar-toggle {
+    float: left;
+    background-color: white;
+  }
 
-.navbar-inverse .navbar-nav li a:hover {
-	background-color: #444444;
-	transition: 0.7s all linear;
-	height: 100%;
-}*/
+  .navbar .container .navbar-header .boutonactif {
+    background-color: #ddd !important;
+  }
+
+  .navbar .container .navbar-header .boutoninactif {
+    background-color: #ddd !important;
+  }
+
+  .navbar .container .nav {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    font-size: 22px;
+  }
+
+  .navbar .container .nav .navbar-brand {
+    display: none;
+  }
+
+  .navbar .container .nav form {
+    display: none;
+  }
+}
 
 .main-footer {
   background-color: #070712;
@@ -8657,7 +8686,7 @@ body {
 
 .lieuinteret .container .h2black {
   padding-bottom: 80px;
-  font-size: 80px;
+  font-size: 60px;
 }
 
 .lieuinteret .container .card_left {
@@ -8668,7 +8697,7 @@ body {
 
 .lieuinteret .container .card_right {
   background-color: #070712;
-  height: 400px;
+  min-height: 400px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -8691,25 +8720,34 @@ body {
 }
 
 .lieuinteret .container .container_buttons {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: space-evenly;
-      -ms-flex-pack: space-evenly;
-          justify-content: space-evenly;
+  text-align: center;
 }
 
-.lieuinteret .container .container_buttons button {
+.lieuinteret .container .container_buttons .wrap_bouton button {
   margin-top: 40px;
   background-color: #070712;
+  min-width: 150px;
   width: auto;
   color: white;
   font-family: "Raleway", sans-serif;
   font-weight: bold;
 }
 
-.lieuinteret .container .container_buttons button a {
+.lieuinteret .container .container_buttons .wrap_bouton button a {
   color: white;
   text-decoration: none;
+}
+
+@media (min-width: 1200px) {
+  .lieuinteret .wrap_bouton {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    background-color: red;
+  }
+}
+
+.lieuxlistglobal p {
+  font-size: 50px;
 }
 
