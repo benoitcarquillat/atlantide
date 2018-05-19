@@ -15,7 +15,7 @@
         <a href="/{{$llg->ville}}/lieux">
             {{$llg->ville}} 
         </a>
-    </div><br/>
+    </div>
     @endforeach
  </div>
  </div>
