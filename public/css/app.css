@@ -8706,7 +8706,7 @@ body {
   color: white;
   font-family: "Raleway", sans-serif;
   font-weight: bold;
-  padding-bottom: 150px;
+  padding-bottom: 50px;
 }
 
 .lieuinteret .container .tag {
@@ -8748,11 +8748,14 @@ body {
   padding-top: 30px;
 }
 
-.lieuinteret .container .container_buttons {
+.lieuinteret .container_buttons {
   text-align: center;
+  margin: 0 auto;
+  padding: 0px;
+  padding-bottom: 100px;
 }
 
-.lieuinteret .container .container_buttons .wrap_bouton button {
+.lieuinteret .container_buttons .wrap_bouton button {
   margin-top: 40px;
   background-color: #070712;
   min-width: 150px;
@@ -8762,7 +8765,7 @@ body {
   font-weight: bold;
 }
 
-.lieuinteret .container .container_buttons .wrap_bouton button a {
+.lieuinteret .container_buttons .wrap_bouton button a {
   color: white;
   text-decoration: none;
 }
@@ -8772,7 +8775,9 @@ body {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    background-color: red;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
   }
 }
 
@@ -8895,6 +8900,52 @@ body {
 
 .listvilles .liste_liens .row .liste_left a:hover,
 .listvilles .liste_liens .row .list_right a:hover {
+  color: lightgray;
+  text-decoration: none;
+}
+
+.lieuxlist .container_titre {
+  color: #070712;
+  text-align: center;
+  height: 20%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  font-family: "Butler", serif;
+  z-index: 200;
+}
+
+.lieuxlist .liste_liens {
+  background-color: #070712;
+  color: white;
+  min-height: 100vh;
+  height: auto;
+  font-family: "Raleway", sans-serif;
+  font-size: 25px;
+  padding-left: 40px;
+  padding-top: 40px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.lieuxlist .liste_liens a {
+  color: white;
+  font-family: "Raleway", sans-serif;
+  padding-top: 10px;
+}
+
+.lieuxlist .liste_liens a:hover {
   color: lightgray;
   text-decoration: none;
 }

@@ -28,11 +28,13 @@
                 </div>
             </div>
         </div>
-        <div class="container_buttons">
-            <button type="button" class="btn"><a href="/">Accueil</a></button>
-            <button type="button" class="btn"><a href="/villes">Liste des villes</a></button>
-            <button type="button" class="btn"><a href="/{{$l->ville}}/evenements">Liste des évenements à {{$l->ville}}</a></button>
-        </div>
+
+    </div>
+    <div class="container_buttons container">
+            
+        <div class="wrap_bouton col-lg-4 col-12"><button type="button" class="btn"><a href="/">Accueil</a></button></div>
+            <div class="wrap_bouton col-lg-4 col-12"><button type="button" class="btn"><a href="/evenements">Liste des villes</a></button></div>
+                <div class="wrap_bouton col-lg-4 col-12"><button type="button" class="btn"><a href="/{{$l->ville}}/evenements">Liste des évenements à {{$l->ville}}</a></button></div>
     </div>
     @endforeach
 
