@@ -8548,6 +8548,12 @@ body {
   margin: auto;
 }
 
+.main-footer .content .main-footer--left a,
+.main-footer .content .main-footer--right a {
+  text-decoration: none;
+  color: #636b6f;
+}
+
 .cards .mg15 {
   margin: 15px 0px;
 }
