@@ -1,6 +1,4 @@
 .cards {
-
-
     .mg15 {
         margin: 15px 0px;
     }
@@ -8,6 +6,12 @@
     .cardWrapper {
         overflow: hidden;
         border-radius: $border-radius;
+        a{
+            text-decoration: none;
+            &:hover,&:focus{
+                text-decoration: none;
+            }
+        }
         .card {
             color: white;
             background-size: cover;

@@ -39,7 +39,6 @@ Route::group(['prefix' => 'admin', 'middleware' => 'checkAdmin'], function() {
 
 });
 
-
 Route::get('/', 'mainController@viewHomepage');
 
 Auth::routes();

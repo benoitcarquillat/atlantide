@@ -8563,6 +8563,15 @@ body {
   border-radius: 15px;
 }
 
+.cards .cardWrapper a {
+  text-decoration: none;
+}
+
+.cards .cardWrapper a:hover,
+.cards .cardWrapper a:focus {
+  text-decoration: none;
+}
+
 .cards .cardWrapper .card {
   color: white;
   background-size: cover;
@@ -8602,6 +8611,56 @@ body {
 .cards .cardWrapper .card:hover {
   -webkit-transform: scale(1.04);
           transform: scale(1.04);
+}
+
+.container_titre {
+  color: #070712;
+  text-align: center;
+  height: 20%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  font-family: "Butler", serif;
+  z-index: 200;
+}
+
+.container_titre h1 {
+  font-size: 28px;
+}
+
+.liste {
+  background-color: #070712;
+  color: white;
+  min-height: 100vh;
+  height: auto;
+  font-family: "Raleway", sans-serif;
+  font-size: 25px;
+  padding-left: 40px;
+  padding-top: 40px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.liste a {
+  color: white;
+  font-family: "Raleway", sans-serif;
+  padding-top: 10px;
+}
+
+.liste a:hover {
+  color: lightgray;
+  text-decoration: none;
 }
 
 .homepage {
@@ -8787,52 +8846,6 @@ body {
   }
 }
 
-.lieuxlistglobal .container_titre {
-  color: #070712;
-  text-align: center;
-  height: 20%;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  font-family: "Butler", serif;
-  z-index: 200;
-}
-
-.lieuxlistglobal .liste_liens {
-  background-color: #070712;
-  color: white;
-  min-height: 100vh;
-  height: auto;
-  font-family: "Raleway", sans-serif;
-  font-size: 25px;
-  padding-left: 40px;
-  padding-top: 40px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-}
-
-.lieuxlistglobal .liste_liens a {
-  color: white;
-  font-family: "Raleway", sans-serif;
-  padding-top: 10px;
-}
-
-.lieuxlistglobal .liste_liens a:hover {
-  color: lightgray;
-  text-decoration: none;
-}
-
 .listvilles .container_titre {
   color: #070712;
   text-align: center;
@@ -8910,7 +8923,7 @@ body {
   text-decoration: none;
 }
 
-.lieuxlist .container_titre {
+.search h1 {
   color: #070712;
   text-align: center;
   height: 20%;
@@ -8918,41 +8931,22 @@ body {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
   -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
   font-family: "Butler", serif;
   z-index: 200;
+  font-size: 28px;
 }
 
-.lieuxlist .liste_liens {
-  background-color: #070712;
-  color: white;
-  min-height: 100vh;
-  height: auto;
-  font-family: "Raleway", sans-serif;
-  font-size: 25px;
-  padding-left: 40px;
-  padding-top: 40px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+.search .container_search {
+  padding-top: 50px;
+  background: #070712;
 }
 
-.lieuxlist .liste_liens a {
-  color: white;
-  font-family: "Raleway", sans-serif;
-  padding-top: 10px;
-}
-
-.lieuxlist .liste_liens a:hover {
-  color: lightgray;
-  text-decoration: none;
+.search .container_search .h2 {
+  font-size: 26px;
 }
 

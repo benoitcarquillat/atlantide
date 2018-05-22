@@ -13,12 +13,12 @@
 @import "layout/nav";
 @import "layout/footer";
 @import "layout/cards";
+@import "layout/liste";
 
 // Pages
 .homepage{ @import "pages/homepage"; }
 .lieuinteret{ @import "pages/lieuinteret";}
-.lieuxlistglobal{ @import "pages/lieuxlistglobal";}
 .listvilles {@import "pages/listvilles";}
-.lieuxlist {@import "pages/lieuxlist";}
+.search {@import "pages/search";}
 
 

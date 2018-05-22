@@ -6,8 +6,6 @@
     <div class="lieu_banner" style="background-image:url(/img/lieux/{{$l->img}});">
         <h1>{{$l->nom}}</h1>       
     </div>
-
-  
     <div class="container">
         <p class="tag">{{$l->type}}</p>
         <h2 class="h2black">A tester à {{$l->ville}}</h2>
