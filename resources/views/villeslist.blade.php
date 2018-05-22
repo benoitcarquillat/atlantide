@@ -3,27 +3,25 @@
 @section('content')
 <div class="listvilles">
     <div class="container_titre">
-    <h3>Retrouvez ici les lieux d'intérêt et les évenements classés par villes</h3>
+    <h3>Retrouvez ici  ici toutes les villes du monde entier !</h3>
     </div>
-    <div class="container">
-        <div class="liste_liens">
-            <div class="row">
-                <div class="col-lg-6 col-sm-12 liste_left">
-                    <h3>Lieux d'intéret</h3>
-                    @foreach($villesList as $vl)
-                        <a href="{{$vl->ville}}/lieux">
-                            {{$vl->ville}}<br/>
-                        </a>
-                    @endforeach
-                </div>
-                <div class="col-lg-6 col-sm-12 list_right">
-                    <h3>Evenements</h3>
-                    @foreach($villesList as $vl)
-                        <a href="{{$vl->ville}}/evenements">
-                            {{$vl->ville}}<br/>
-                        </a>
-                    @endforeach
-                </div>
+    <div class="liste">
+        <div class="container">
+            <div class="row cards">
+                @foreach($villesList as $vl)
+                    <div class="col-6 col-md-3 mg15">
+                        <div class="cardWrapper">
+                            <div class="col-md-12 card" style="background-image:url(/img/lieux/{{$vl->img}});">
+                                <a href="/ville/{{$vl->ville}}">
+                                    <div class="card_content">
+                                        <p class="uppercase bold ville"> {{$vl->ville}} </p>
+                                        <p class="uppercase bold nom"> {{$vl->codeP}} </p>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                @endforeach
             </div>
         </div>
     </div>

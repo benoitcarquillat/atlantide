@@ -22,12 +22,12 @@ class mainController extends Controller
 
     public function viewVillesList(){
         $villesList = Lieux::all();
-        $villesList = DB::table('lieux')->distinct()->get(['ville']);
+        $villesList = DB::table('lieux')->distinct(['ville'])->get();
         //$villesList2 = DB::table('evenement')->distinct()->get(['ville']); 
         //dd($villesList);
-        $villesList2 = DB::table('evenement')->distinct()->get(['ville']);
-        $totalVillesList = $villesList->concat($villesList2);
-        return view('villesList', ['villesList'=>$totalVillesList]);
+        //$villesList2 = DB::table('evenement')->distinct()->get(['ville']);
+        //$totalVillesList = $villesList->concat($villesList2);
+        return view('villesList', ['villesList'=>$villesList]);
 
     }
 
