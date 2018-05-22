@@ -7,10 +7,9 @@ body {
     font-family: 'Raleway', sans-serif;
     background-color: $body-bg;
     margin-top: $height-nav;
-}
-
-#app {
-    min-height: 100vh;
+    #app{
+        min-height: 80vh;
+    }
 }
 
 .h2 {

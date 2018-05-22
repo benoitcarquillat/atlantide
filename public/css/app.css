@@ -8361,8 +8361,8 @@ body {
   margin-top: 70px;
 }
 
-#app {
-  min-height: 100vh;
+body #app {
+  min-height: 80vh;
 }
 
 .h2 {
@@ -8869,7 +8869,24 @@ body {
   background: #070712;
 }
 
-.search .container_search .h2 {
+.search .h2 {
   font-size: 26px;
+}
+
+.search .container {
+  font-size: 26px;
+}
+
+.search .container.notfound {
+  position: absolute;
+  width: 100%;
+  top: 30%;
+  left: 0;
+  right: 0;
+}
+
+.search .container.notfound .h2 {
+  color: black;
+  text-align: center;
 }
 

@@ -19,8 +19,22 @@
     .container_search{
         padding-top: 50px;
         background: $dark-blue;
-        .h2{
-            font-size: 26px;
+    }
+    .h2{
+        font-size: 26px;
+    }
+    .container{
+        font-size: 26px;
+        &.notfound{
+            .h2{
+                color: black;
+                text-align: center;
+            }
+            position: absolute;
+            width: 100%;
+            top: 30%;
+            left: 0;
+            right: 0;
         }
     }
 }
