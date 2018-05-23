@@ -47,10 +47,10 @@ Route::get('/home', 'HomeController@index')->name('home');
 
 /******** ROUTES GERANT LES PAGES DE DESTINATION VILLE***********/
 
-Route::get('/villes', 'mainController@viewVillesList');
-Route::get('/villes/{nomVille}', 'mainController@viewVillesListAll');
-Route::get('/villes/lieux', 'mainController@viewLieuxList');
-Route::get('/villes/evenements', 'mainController@viewEvenementsList');
+Route::get('/villes', 'mainController@viewVillesListAll');
+Route::get('/villes/{nomVille}', 'mainController@viewVillesList');
+//Route::get('/villes/lieux', 'mainController@viewLieuxList');
+//Route::get('/villes/evenements', 'mainController@viewEvenementsList');
 
  /******** ROUTES GERANT LES PAGES DE LIEUX D INTERET ***********/
 
@@ -63,9 +63,3 @@ Route::get('/lieux', 'mainController@viewLieuListGlobal');
 Route::get('/evenements', 'mainController@viewEvenementsListGlobal');
 Route::get('/evenements/{nomEvenement}', 'mainController@viewEvenement');
 //Route::get('/evenement/{nom}','ControllerEvenementFilm@view');//->where('id','[0-9]+');
-
-
-
-
-
-
