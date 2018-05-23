@@ -8890,3 +8890,48 @@ body #app {
   text-align: center;
 }
 
+.page404 {
+  height: calc(100vh - 70px);
+  background-image: url("/img/lieux/404.jpg");
+  background-size: cover;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.page404 .message {
+  display: inline-block;
+  text-align: center;
+}
+
+.page404 .message h1 {
+  color: white !important;
+  font-family: "Butler", serif !important;
+  font-size: 55px !important;
+  padding-bottom: 60px;
+}
+
+.page404 .message button {
+  background-color: #070712;
+  min-width: 150px;
+  width: auto;
+  color: white;
+  font-family: "Raleway", sans-serif;
+  font-weight: bold;
+  font-size: 22px;
+  margin: 0 auto;
+  padding-left: 50px;
+  padding-right: 50px;
+}
+
+.page404 .message button a {
+  color: white;
+  text-decoration: none;
+}
+
