@@ -47,19 +47,16 @@ Route::get('/home', 'HomeController@index')->name('home');
 
 /******** ROUTES GERANT LES PAGES DE DESTINATION VILLE***********/
 
-Route::get('villes', 'mainController@viewVillesList');
-
-Route::get('{nomVille}/lieux', 'mainController@viewLieuxList');
-Route::get('{nomVille}/evenements', 'mainController@viewEvenementsList');
+Route::get('/villes', 'mainController@viewVillesList');
+Route::get('/villes/{nomVille}', 'mainController@viewVillesListAll');
+Route::get('/villes/lieux', 'mainController@viewLieuxList');
+Route::get('/villes/evenements', 'mainController@viewEvenementsList');
 
  /******** ROUTES GERANT LES PAGES DE LIEUX D INTERET ***********/
-
 
 //Route::get('{nomVille}/lieux/{nomLieuInteret}', 'mainController@viewLieuInteret');
 Route::get('/lieux/{nomLieu}', 'mainController@viewLieuInteret');
 Route::get('/lieux', 'mainController@viewLieuListGlobal');
-
-
 
 /******** ROUTES GERANT LES PAGES DES EVENEMENTS ***********/
 //
