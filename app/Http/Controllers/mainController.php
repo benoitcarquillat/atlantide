@@ -30,19 +30,25 @@ class mainController extends Controller
         return view('villesList', ['villesList'=>$villesList]);
 
     }
+    public function viewVillesListAll($nomVille){
+        $listeLieux = DB::table('lieux')->where('ville', $nomVille )->get();
+        $evenementsList = DB::table('evenement')->where('ville', $nomVille )->get();
+        $totalVillesList = $listeLieux->concat($evenementsList);
+        return view('villesListAll', ['villesListAll'=>$totalVillesList]);
+    }
 
-    public function viewLieuxList($nomVille){
+    public function viewLieuxListVille($nomVille){
         //$listeLieux = Lieux::select('select * from lieux where ville = "Mulhouse" ');
         $listeLieux = DB::table('lieux')->where('ville', $nomVille )->get();
         //$listeLieux = Lieux::all();
-        return view('LieuxList', ['listeLieux'=>$listeLieux]);
+        return view('LieuxListVille', ['listeLieuxVille'=>$listeLieux]);
     }
 
-    public function viewEvenementsList($nomVille){
+    public function viewEvenementsListVille($nomVille){
         //$listeLieux = Lieux::select('select * from lieux where ville = "Mulhouse" ');
         $evenementsList = DB::table('evenement')->where('ville', $nomVille )->get();
         //$listeLieux = Lieux::all();
-        return view('evenementsList', ['evenementsList'=>$evenementsList]);
+        return view('evenementsListVille', ['evenementsListVille'=>$evenementsList]);
     }
 
     public function viewLieuInteret($nomLieu){

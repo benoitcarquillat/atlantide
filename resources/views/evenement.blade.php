@@ -33,8 +33,8 @@
     <div class="container_buttons container">
             
         <div class="wrap_bouton col-lg-4 col-12"><button type="button" class="btn"><a href="/">Accueil</a></button></div>
-            <div class="wrap_bouton col-lg-4 col-12"><button type="button" class="btn"><a href="/evenements">Liste des villes</a></button></div>
-                <div class="wrap_bouton col-lg-4 col-12"><button type="button" class="btn"><a href="/{{$l->ville}}/evenements">Liste des évenements à {{$l->ville}}</a></button></div>
+            <div class="wrap_bouton col-lg-4 col-12"><button type="button" class="btn"><a href="/evenements">Liste des évenements</a></button></div>
+                <div class="wrap_bouton col-lg-4 col-12"><button type="button" class="btn"><a href="/villes/{{$l->ville}}">Liste des évenements et lieu d'interêt à {{$l->ville}}</a></button></div>
     </div>
     @endforeach
 
