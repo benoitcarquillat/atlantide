@@ -19,7 +19,7 @@
     </div>
 
     @include('templates/footer')
-    @if(request()->route()->getName() == '')
+    @if(request()->route()->getName() == 'homepage')
     <!-- Scripts -->
     <script src="{{ asset('js/library/rellax.min.js') }}"></script>
     <script src="{{ asset('js/app.js') }}"></script>

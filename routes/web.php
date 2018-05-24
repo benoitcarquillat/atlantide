@@ -39,7 +39,7 @@ Route::group(['prefix' => 'admin', 'middleware' => 'checkAdmin'], function() {
 
 });
 
-Route::get('/', 'mainController@viewHomepage');
+Route::get('/', 'mainController@viewHomepage')->name('homepage');
 
 Auth::routes();
 
