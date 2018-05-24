@@ -19,10 +19,12 @@
     </div>
 
     @include('templates/footer')
-
+    @if(request()->route()->getName() == '')
     <!-- Scripts -->
     <script src="{{ asset('js/library/rellax.min.js') }}"></script>
     <script src="{{ asset('js/app.js') }}"></script>
+
+    @endif
 
 </body>
 </html>
