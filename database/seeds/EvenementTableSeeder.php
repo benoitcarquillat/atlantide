@@ -21,7 +21,7 @@ class EvenementTableSeeder extends Seeder
                 'dateDebut' => Carbon::parse('2000-01-01'),
                 'dateFin' => Carbon::parse('2000-01-01'),
                 'adresse' => "adresse $i",
-                'ville' => "event ville $i",
+                'ville' => "ville $i",
                 'codeP' => 60400,
             ]);
         }

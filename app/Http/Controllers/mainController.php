@@ -30,10 +30,10 @@ class mainController extends Controller
         return view('villesListGlobal', ['villesListGlobal'=>$villesListGlobal]);
     }
     public function viewVillesList($nomVille){
-        $listeLieux = DB::table('lieux')->where('ville', $nomVille )->get();
-        $evenementsList = DB::table('evenement')->where('ville', $nomVille )->get();
-        $totalVillesList = $listeLieux->concat($evenementsList);
-        return view('villesList', ['villesList'=>$totalVillesList]);
+        $lieux = DB::table('lieux')->where('ville', $nomVille )->get();
+        $evenements = DB::table('evenement')->where('ville', $nomVille )->get();
+        //$totalVillesList = $listeLieux->concat($evenementsList);
+        return view('villesList', ['lieux'=>$lieux,'evenements'=>$evenements]);
     }
 
     public function viewLieuxListVille($nomVille){

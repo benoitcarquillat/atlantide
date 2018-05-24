@@ -8823,7 +8823,7 @@ body #app {
 .lieuinteret .container_buttons .wrap_bouton button {
   margin-top: 40px;
   background-color: #070712;
-  min-width: 150px;
+  padding: 10px 20px;
   width: auto;
   color: white;
   font-family: "Raleway", sans-serif;

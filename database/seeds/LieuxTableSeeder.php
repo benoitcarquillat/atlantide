@@ -18,7 +18,7 @@ class LieuxTableSeeder extends Seeder
                 'description' => "lorem ipsum",
                 'img' => "img$i.jpg",
                 'adresse' => "adresse $i",
-                'ville' => "lieux ville $i",
+                'ville' => "ville $i",
                 'codeP' => 60400,
                 // 'created_at' => Carbon::parse('2000-01-01'),
                 // 'updated_at' => Carbon::parse('2000-01-01'),
